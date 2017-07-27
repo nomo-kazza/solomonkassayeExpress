@@ -59,3 +59,15 @@
         background: #666;
         color: #fff;
       }
+  .message-sent-status {
+    font-size: 15px;
+    color: #fff;
+    background: rgba(0, 255, 0, 0.5);
+    padding: 10px;
+    position: fixed;
+    top: 10vh;
+    display: none;
+  }
+  .message-sent-status.show {
+    display: block;
+  }

@@ -33,6 +33,11 @@ class ContactMe extends Component {
     .then((responseJson) => {
       console.log(responseJson)
       if (responseJson.success) {
+        this.state = {
+          email: '',
+          name: '',
+          message: ''
+        }
         this.setState({formSent: true})
       }
       else this.setState({formSent: false})
@@ -51,6 +56,7 @@ class ContactMe extends Component {
   render() {
     return (
       <div className="sk-contact-me">
+        <div className={"message-sent-status " + (this.state.formSent ? "show" : '')} >Your message has been sent. Thank You, I will reply to you soon.</div>
         <div className="sk-contact-form">
           <h1>Contact Me</h1>
           <form name="skContactForm" onSubmit={this.handleSubmit}>
