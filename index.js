@@ -1,8 +1,17 @@
 const express = require('express');
 const path = require('path');
-const generatePassword = require('password-generator');
+const morgan = require('morgan');
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 
 const app = express();
+
+
+// Setup logger
+app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'));
+
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: false })); // support encoded bodies
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
