@@ -68,7 +68,7 @@
         height: 30px;
         opacity: 0.9;
       }
-      .slick-dots li.slick-active button:before {
+      .sk-projects .slick-dots li.slick-active button:before {
         color: #F44336;
       }
       .sk-projects .slick-dots li {
