@@ -16,7 +16,11 @@ class ContactMe extends Component {
 
   handleSubmit(e) {
     e.preventDefault()
-
+    if(this.state.email === "" || this.state.message === "") {
+      this.setState({ isEmpty: true });
+      setTimeout(() => { this.setState({isEmpty: false}) }, 5000)
+      return;
+    }
     fetch('/contact-me', {
       method: 'POST',
       headers: {
@@ -32,21 +36,24 @@ class ContactMe extends Component {
     .then((response) => response.json())
     .then((responseJson) => {
       console.log(responseJson)
-      if (responseJson.success) {
-        this.state = {
+
+      if (responseJson.ok) {
+        this.setState({
           email: '',
           name: '',
           message: ''
-        }
+        })
         this.setState({formSent: true})
       }
       else this.setState({formSent: false})
     })
+    .then(() => setTimeout(() => { this.setState({formSent: false}) }, 5000))
     .catch((error) => {
       console.log(error)
       console.error(error);
     });
   }
+
   onChange(e) {
     let newState = {};
     newState[e.target.name] =  e.target.value;
@@ -56,7 +63,10 @@ class ContactMe extends Component {
   render() {
     return (
       <div className="sk-contact-me">
-        <div className={"message-sent-status " + (this.state.formSent ? "show" : '')} >Your message has been sent. Thank You, I will reply to you soon.</div>
+        <div className={"message-sent-status " + (this.state.formSent ? "show" : '')} >
+          Your message has been sent. Thank You, I will reply too soon.</div>
+        <div className={"message-sent-status " + (this.state.isEmpty ? "show error" : '')} >
+          Please enter your email and/or message</div>
         <div className="sk-contact-form">
           <h1>Contact Me</h1>
           <form name="skContactForm" onSubmit={this.handleSubmit}>
