@@ -7,19 +7,39 @@ const app = express();
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-// Put all API endpoints under '/api'
-app.get('/api/passwords', (req, res) => {
-  const count = 5;
+app.post('/contact-me', function (req, res) {
 
-  // Generate some passwords
-  const passwords = Array.from(Array(count).keys()).map(i =>
-    generatePassword(12, false)
-  )
+    // create reusable transporter object using SMTP transport
+    var transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+            user: 'solomonneedajob@gmail.com',
+            pass: 'papi5503'
+        }
+    });
 
-  // Return them as json
-  res.json(passwords);
+    // setup e-mail data with unicode symbols
+    var mailOptions = {
+        from: req.body.email,
+        to: 'solomonjobsearch@gmail.com',
+        subject: 'Contact Me message from your website',
+        text: 'Hello world text',
+        html: ` <table>
+                    <tr>From :  ${req.body.name}</tr>
+                    <tr>Sender Email : ${req.body.email}</tr>
+                    <tr>  </tr>
+                    <tr>Message : ${req.body.message}</tr>
+                </table>`
+    };
 
-  console.log(`Sent ${count} passwords`);
+    // // send mail with defined transport object
+    transporter.sendMail(mailOptions, function(error, info){
+        if(error){
+            return console.log(error);
+        }
+        console.log('Message sent: ' + info.response);
+        res.json({'ok': true});
+    });
 });
 
 // The "catchall" handler: for any request that doesn't
