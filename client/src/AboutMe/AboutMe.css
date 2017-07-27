@@ -1,0 +1,196 @@
+/*-->> about me style <<--*/
+.sk-about-me {
+  position: relative;
+  min-height: 100vh;
+}
+  .sk-about-me .bg-cover {
+    background-color: rgba(81, 160, 9, 0.93);
+    height: 100%;
+  }
+  .sk-about-me .intro-bg {
+    background: url('../images/me-bg1.jpg') no-repeat center center fixed;
+    /*filter: brightness(0.3);*/
+    background-size: cover;
+    height: 100%;
+  }
+  .sk-about-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0px 20px 100px;
+    color: #fff;
+    position: relative;
+    font-weight: 300;
+    z-index: 9;
+  }
+    .sk-about-content .sk-intro-container {
+      flex: 3;
+      padding-right: 100px;
+    }
+
+    .sk-about-content .sk-intro-container h5 {
+      line-height: 1.4;
+    }
+    .sk-about-content .sk-h3 {
+      margin-bottom: 30px;
+    }
+    .sk-about-content .sk-intro-container h3 {
+      font-size: 40px;
+      display: inline;
+      background: blue;
+    }
+    .sk-about-content .sk-h4 {
+      margin-bottom: 20px;
+    }
+    .sk-about-content .sk-intro-container h4 {
+      font-size: 30px;
+      background: teal;
+      display: inline;
+    }
+    /*.sk-about-content .sk-h5 {
+      margin-bottom: 10px;
+    }*/
+    .sk-about-content .sk-intro-container h5 {
+      font-size: 20px;
+      background: brown;
+      display: inline;
+    }
+    .sk-about-content .sk-skills {
+      flex: 1;
+      padding: 40px 50px 10px 20px;
+    }
+      .sk-skills .sk-h4 {
+        text-align: center;
+        padding-bottom: 10px;
+      }
+      .sk-skills h4 {
+        font-size: 20px;
+        display: inline;
+        background: teal;
+      }
+
+        .sk-skills ul li {
+          padding: 10px;
+          transform: skew(-10deg);
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+        }
+          .sk-skills ul li a {
+            transform: skew(0deg);
+          }
+        .sk-skills ul li:nth-child(2n) {
+          transform: skew(10deg);
+        }
+          .sk-skills ul li:nth-child(2n) a {
+            transform: skew(0deg);
+          }
+        .sk-skills ul li:hover {
+          transform: skew(0deg);
+        }
+        .sk-skills ul li:nth-child(2n):hover {
+          transform: skew(0deg);
+        }
+        .sk-skills ul li.html5 {
+          background-color: #f1672c;
+        }
+        .sk-skills ul li.css3 {
+          background-color: #30a9dc;
+        }
+        .sk-skills ul li.bootstrap {
+          background-color: #5c4383;
+        }
+        .sk-skills ul li.sass {
+          background-color: #cf649a;
+        }
+        .sk-skills ul li.js {
+          background-color: #f1bf26;
+        }
+        .sk-skills ul li.jquery {
+          background-color: #0769ad;
+        }
+        .sk-skills ul li.angular1 {
+          background-color: #dd1b16;
+        }
+        .sk-skills ul li.angular4 {
+          background-color: #c3002f;
+        }
+        .sk-skills ul li.react {
+          background-color: #00d8ff;
+        }
+        .sk-skills ul li.node {
+          background-color: #43853d
+        }
+        .sk-skills ul li.d3 {
+          background-color: #f67600;
+        }
+        .sk-skills ul li.require {
+          background-color: #42a4ec;
+        }
+        .sk-skills ul li.java {
+          background-color: #ff0000;
+        }
+        .sk-skills ul li.mongodb {
+          background-color: #7fc857;
+        }
+        .sk-skills ul li.ionic {
+          background-color: #298fff;
+        }
+        .sk-skills ul li.ruby {
+          background-color: #cc0000;
+        }
+        .sk-skills ul li.gmap {
+          background-color: #f8d335;
+        }
+        .sk-skills ul li.android {
+          background-color: #77c159;
+        }
+        .sk-skills ul li.sharepoint {
+          background-color: #1570A6;
+        }
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .sk-about-content {
+    padding: 120px 0px 20px 50px;
+  }
+    .sk-about-content .sk-intro-container {
+      padding-right: 30px;
+    }
+      .sk-about-content .sk-intro-container h3 {
+        font-size: 38px;
+      }
+      .sk-about-content .sk-intro-container .sk-h5 {
+        margin-bottom: 15px;
+      }
+      .sk-about-content .sk-intro-container h5 {
+        font-size: 18px;
+      }
+      .sk-about-content .sk-skills {
+        padding: 40px 35px 10px 25px;
+      }
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .sk-about-content {
+    padding: 0;
+    flex-direction: column;
+  }
+    .sk-about-content .sk-intro-container {
+      padding: 80px 10px 20px 30px;
+    }
+    .sk-about-content .sk-intro-container .sk-h3 {
+      margin-bottom: 20px;
+    }
+    .sk-about-content .sk-intro-container .sk-h4 {
+      margin-bottom: 15px;
+    }
+    .sk-about-content .sk-intro-container h3 {
+      font-size: 30px;
+    }
+    .sk-about-content .sk-intro-container h4 {
+      font-size: 25px;
+    }
+    .sk-about-content .sk-intro-container h5 {
+      font-size: 18px;
+    }
+      .sk-about-content .sk-skills {
+        padding: 40px 30px;
+      }
+}

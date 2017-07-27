@@ -1,61 +1,38 @@
 import React, { Component } from 'react';
+import {
+  Route,
+  Switch,
+} from 'react-router-dom';
+import Header from './Header';
+import Footer from './Footer';
+import Projects from './Projects';
+import Achievements from './Achievements';
+import AboutMe from './AboutMe';
+import ContactMe from './ContactMe';
+import FourOFour from './404Example'
+import Home from './Home'
 import './App.css';
 
 class App extends Component {
-  // Initialize state
-  state = { passwords: [] }
-
-  // Fetch passwords after first mount
-  componentDidMount() {
-    this.getPasswords();
-  }
-
-  getPasswords = () => {
-    // Get the passwords and store them in state
-    fetch('/api/passwords')
-      .then(res => res.json())
-      .then(passwords => this.setState({ passwords }));
-  }
-
   render() {
-    const { passwords } = this.state;
-
     return (
       <div className="App">
-        {/* Render the passwords if we have them */}
-        {passwords.length ? (
-          <div>
-            <h1>5 Passwords.</h1>
-            <ul className="passwords">
-              {/*
-                Generally it's bad to use "index" as a key.
-                It's ok for this example because there will always
-                be the same number of passwords, and they never
-                change positions in the array.
-              */}
-              {passwords.map((password, index) =>
-                <li key={index}>
-                  {password}
-                </li>
-              )}
-            </ul>
-            <button
-              className="more"
-              onClick={this.getPasswords}>
-              Get More
-            </button>
-          </div>
-        ) : (
-          // Render a helpful message otherwise
-          <div>
-            <h1>No passwords :(</h1>
-            <button
-              className="more"
-              onClick={this.getPasswords}>
-              Try Again?
-            </button>
-          </div>
-        )}
+        <div className="App-header">
+          <Header />
+        </div>
+        <div className="App-content">
+          <Switch>
+            <Route exact path={process.env.PUBLIC_URL + '/'} component={Home}/>
+            <Route path="/projects" component={Projects} />
+            <Route path="/achievements" component={Achievements} />
+            <Route path="/about-me" component={AboutMe} />
+            <Route path="/contact-me" component={ContactMe} />
+            <Route component={FourOFour}/>
+          </Switch>
+        </div>
+        <div className="App-footer">
+          <Footer />
+        </div>
       </div>
     );
   }

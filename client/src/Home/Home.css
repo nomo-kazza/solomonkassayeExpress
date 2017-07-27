@@ -1,0 +1,253 @@
+/*-->> main-content style <<--*/
+.sk-main-content {
+  /*padding: 20px 30px;*/
+  position: relative;
+}
+.intro-bg {
+  background: url('../images/tco20163.jpg') no-repeat center center fixed;
+  background-color: rgb(127, 255, 212);
+  width: 100%;
+  height: calc(100vh);
+  background-size: cover;
+  /*filter: brightness(0.5);*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.bg-cover {
+  width: 100%;
+  height: calc(100vh);
+  background-color: rgba(0,220, 20, 0.75);
+  mix-blend-mode: multiply;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.sk-main-content .sk-intro-container {
+  padding: 160px 0px 20px 180px;
+  line-height: 1.3;
+  border-radius: 40px;
+  position: relative;
+  z-index: 9;
+  height: calc(100vh);
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  max-width: 860px;
+}
+  .sk-intro-container .sk-h3 {
+    margin-bottom: 30px;
+  }
+  .sk-intro-container h3 {
+    font-size: 50px;
+    display: inline;
+    background: blue;
+  }
+  .sk-intro-container .sk-h4 {
+    margin-bottom: 20px;
+  }
+  .sk-intro-container h4 {
+    font-size: 35px;
+    background: teal;
+    display: inline;
+  }
+  .sk-intro-container .sk-h5 {
+    margin-bottom: 15px;
+  }
+  .sk-intro-container h5 {
+    font-size: 20px;
+    line-height: 1.5;
+    background: brown;
+    display: inline;
+  }
+  .sk-intro-container a.link {
+    font-size: 20px;
+    color: #00bcd4;
+    display: inline-block;
+    line-height: 1.5;
+  }
+  .sk-intro-container a.link:hover {
+    text-decoration: underline;
+  }
+  
+.sk-main-content .sk-carousel-container {
+  background-color: rgba(69, 159, 237, 1);
+  padding: 60px 400px 30px 50px;
+  position: relative;
+}
+  .sk-carousel-container .projects-right {
+    position: absolute;
+    right: 50px;
+    top: 120px;
+    width: 260px;
+  }
+  .projects-right h4 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 20px;
+    display: inline-block;
+    background: teal;
+  }
+  .projects-right h5 {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 300;
+    display: inline;
+    background: brown;
+  }
+
+.sk-btn {
+  font-size: 20px;
+  padding: 5px 10px;
+  display: block;
+  width: 200px;
+  color: #00bcd4;
+  text-align: center;
+  line-height: 29px;
+  background-color: rgba(255, 255, 255, 1);
+  transition: all 0.4s ease 0s;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+.sk-btn:hover {
+  background-color: #00bcd4;
+  color: rgba(255, 255, 255, 1);
+}
+.more-btn {
+  width: 150px;
+  font-weight: 300;
+}
+@media only screen and (min-width: 1025px) {
+  .sk-achievements-container:before {
+    content: '';
+  }
+  .sk-achievements-container:after {
+    content: '';
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .sk-main-content .sk-intro-container {
+      padding: 160px 40px 20px 70px;
+    }
+    .sk-intro-container .sk-h3 {
+      margin-bottom: 50px;
+    }
+    .sk-intro-container .sk-h4 {
+      margin-bottom: 30px;
+    }
+    .sk-intro-container .sk-h5 {
+      margin-bottom: 25px;
+    }
+    .sk-intro-container h5 {
+      line-height: 1.7;
+    }
+    .sk-projects-slider:after {
+      display: none;
+    }
+    .sk-projects-slider {
+      padding: 20px;
+      margin-bottom: 90px;
+    }
+      .sk-main-content .sk-carousel-container {
+        padding: 60px 350px 30px 30px;
+      }
+        .slick-dots {
+          bottom: -17px;
+        }
+      .sk-carousel-container .projects-right {
+        top: 90px;
+      }
+        .projects-right h5 {
+          font-size: 18px;
+        }
+        .projects-right h4 {
+          font-size: 28px;
+        }
+    .sk-achievements-content {
+      padding: 80px 50px;
+    }
+      .sk-achievements-link {
+        width: 50%;
+        padding-right: 20px;
+      }
+      .sk-achievements-link .link-to {
+        font-size: 18px;
+      }
+        .sk-achievements-link h4 {
+          margin: 0px 0 30px;
+          font-size: 28px;
+        }
+      .sk-achievements {
+        width: 50%;
+      }
+  .sk-btn {
+    font-size: 18px;
+    padding: 3px 10px;
+  }
+}
+	@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .sk-main-content .sk-intro-container {
+      padding: 80px 10px 20px 30px;
+    }
+    .sk-intro-container .sk-h3 {
+      margin-bottom: 20px;
+    }
+    .sk-intro-container .sk-h4 {
+      margin-bottom: 15px;
+    }
+    .sk-intro-container h3 {
+      font-size: 30px;
+    }
+    .sk-intro-container h4 {
+      font-size: 25px;
+    }
+    .sk-intro-container h5 {
+      font-size: 18px;
+    }
+    .sk-main-content .sk-carousel-container {
+      padding: 40px 20px 30px 20px;
+    }
+      .sk-projects-slider {
+        border-radius: 10px;
+        padding: 30px 15px;
+        width: 250px;
+        display: block;
+        margin: 0 auto 50px;
+        height: 350px;
+      }
+      .sk-projects-slider::after {
+        display: none;
+      }
+      .sk-carousel-container .projects-right {
+        position: relative;
+        width: 100%;
+        top: 0;
+        right: 0;
+        padding-left: 10px;
+      }
+        .projects-right h4 {
+          font-size: 28px;
+          margin-bottom: 15px;
+        }
+        .projects-right h5 {
+          font-size: 18px;
+        }
+        .projects-right .sk-btn {
+          margin-top: 30px;
+        }
+        .sk-btn {
+          border-radius: 3px;
+          background: #00bcd4;
+          color: #fff;
+          font-size: 18px;
+          margin-top: 30px;
+        }
+      .slick-slide img {
+        height: 285px;
+        width: auto;
+      }
+  }

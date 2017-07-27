@@ -1,0 +1,70 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+/*-->> Projects Slider style <<--*/
+.sk-projects-slider {
+  background-color: #e5e8e8;
+  border: 2px solid #e1e6e6;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 125px;
+  position: relative;
+}
+.sk-projects-slider:after {
+  background-image: url('../images//slider-bg-foot.png');
+  background-repeat: no-repeat;
+  width: 210px;
+  height: 125px;
+  background-size: 100%;
+  content: '';
+  position: absolute;
+  bottom: -127px;
+  left: 50%;
+  transform: translate(-50%);
+}
+/*-->> slick overide style <<--*/
+.slick-slide img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.slick-dots {
+  bottom: -20px;
+}
+.slick-dots li button:before {
+  font-size: 8px;
+  color: #c2c7ca;
+  transition: all .4s ease-in-out;
+  width: 15px;
+  height: 15px;
+  opacity: 0.9;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 30px;
+}
+.slick-prev, .slick-next {
+  width: 30px;
+  height: 30px;
+}
+.slick-prev {
+  left: -35px;
+}
+.slick-next {
+  right: -35px;
+}
+.slick-dots li {
+  margin: 0;
+  width: 15px;
+  height: 15px;
+}
+.slick-dots li button {
+  width: 15px;
+  height: 15px;
+}
+.slick-dots li.slick-active button:before {
+  color: #717c83;
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .slick-slide img {
+    /* height: 305px; */
+  }
+}

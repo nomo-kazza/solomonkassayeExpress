@@ -1,0 +1,93 @@
+.sk-footer footer {
+	background: #434;
+	padding: 40px;
+	color: #fff;
+	display: flex;
+}
+	.copyright {
+		font-size: 15px;
+		font-weight: 300;
+		flex: 1;
+		align-self: center;
+
+	}
+    .copyright p {
+      margin-top: 10px;
+    }
+		.contact-info {
+      display: flex;
+      flex-direction: column;
+    }
+      .contact-info a {
+        display: flex;
+        color: #00bcd4;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 70px;
+      }
+      .contact-info a span:hover:last-child {
+        color: #009cd4;
+      }
+        .contact-info a span.f-label {
+          margin-right: 20px;
+          color: #fff;
+          position: absolute;
+          left: 0;
+        }
+.social-icons {
+	display: flex;
+}
+	.social-icons a {
+		display: flex;
+		align-items: center;
+		margin-left: 10px;
+	}
+	.social-icon {
+		display: flex;
+	}
+	.facebook-icon {
+		position: relative;
+		top: -4px;
+		left: -2px;
+	}
+	.social-icon svg g {
+		transform: scale(1.5);
+	}
+	.facebook-icon svg g {
+		transform: scale(0.56);
+	}
+	.skype-icon:hover svg {
+		fill: #00aff0;
+	}
+	.github-icon:hover svg {
+		fill: #fff;;
+	}
+	.gmail-icon:hover svg {
+		fill: #d74a38;
+	}
+	.twitter-icon:hover svg {
+		fill: #4ab3f4;;
+	}
+	.linkedin-icon:hover svg {
+		fill: #0077b5;
+	}
+	.facebook-icon:hover svg {
+		fill: #3b5998;
+	}
+	@media only screen and (max-width: 767px) and (min-width: 320px) {
+		.sk-footer footer {
+			flex-direction: column-reverse;
+			padding: 20px 10px;
+		}
+		.social-icons {
+			margin-bottom: 20px;
+		}
+		.logo img {
+			width: 75px;
+		}
+		.copyright {
+			align-self: flex-start;
+  		padding-left: 10px;
+		}
+	}
+
