@@ -13,11 +13,19 @@ app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:htt
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: false })); // support encoded bodies
 // enable ssl redirect
-app.use(sslRedirect([
-  'other',
-  'development',
-  'production'
-  ]));
+app.use(function (req, res, next) {
+  var newURL;
+
+  // If not on HTTPS, or not on the main domain, redirect
+  if (process.env.NODE_ENV === 'production' &&
+    (req.headers['x-forwarded-proto'] !== 'https' || req.headers.host !== 'solomonkassaye.com')) {
+
+    newURL = ['https://www.solomonkassaye.com', req.url].join('');
+    return res.redirect(newURL);
+  }
+
+  return next();
+});
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
