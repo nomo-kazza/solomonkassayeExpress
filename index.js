@@ -13,7 +13,11 @@ app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:htt
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: false })); // support encoded bodies
 // enable ssl redirect
-app.use(sslRedirect());
+app.use(sslRedirect([
+  'other',
+  'development',
+  'production'
+  ]));
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
