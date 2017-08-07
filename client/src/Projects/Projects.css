@@ -24,8 +24,9 @@
   .sk-projects-video .sk-h4 {
     position: absolute;
     left: 50%;
-    top: 200px;
-    font-size: 35px;
+    bottom: 20px;
+    width: 75%;
+    font-size: 30px;
     line-height: 1.5;
     color: #fff;
     text-align: center;
