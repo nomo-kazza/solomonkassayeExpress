@@ -15,6 +15,8 @@ class ResumeSlider extends Component {
       autoplay: false,
       slidesToShow: 1,
       slidesToScroll: 1,
+      verticalSwiping: true,
+      draggable: true,
       cssEase: "ease-in-out",
       // autoplaySpeed: 100,
       // swipeToSlide: true,

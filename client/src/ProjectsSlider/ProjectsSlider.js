@@ -13,12 +13,8 @@ class ProjectsSlider extends Component {
       autoplay: true,
       slidesToShow: 1,
       slidesToScroll: 1,
+      draggable: true,
       cssEase: "ease-in-out",
-
-
-      // autoplaySpeed: 100,
-      // swipeToSlide: true,
-      // touchMove: true
     };
     return (
       <div className="sk-projects-slider">
