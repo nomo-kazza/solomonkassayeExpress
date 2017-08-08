@@ -19,7 +19,7 @@ class Header extends Component {
         <div className="logo"><a href="/"><img src="https://dl.dropboxusercontent.com/s/p5kxedztr9iwgkt/my-logo4.png" alt="logo"/></a></div>
         <nav className={'mobile-nav'+ (this.state.isOpen ? ' open' : '')}>
             <ul className={this.state.isOpen ? 'mobile open' : ''} onClick={this.toggleHamburger}>
-                <li><NavLink to="/home" activeClassName="active-page"><span></span>Home</NavLink></li>
+                <li><NavLink to="/" activeClassName="active-page"><span></span>Home</NavLink></li>
                 <li><NavLink to="/projects" activeClassName="active-page"><span></span>Projects</NavLink></li>
                 <li><NavLink to="/achievements" activeClassName="active-page"><span></span>Achievements</NavLink></li>
                 <li><NavLink to="/about-me" activeClassName="active-page"><span></span>About Me</NavLink></li>
