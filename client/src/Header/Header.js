@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Header.css';
 
 class Header extends Component {
@@ -19,11 +19,12 @@ class Header extends Component {
         <div className="logo"><a href="/"><img src="https://dl.dropboxusercontent.com/s/p5kxedztr9iwgkt/my-logo4.png" alt="logo"/></a></div>
         <nav className={'mobile-nav'+ (this.state.isOpen ? ' open' : '')}>
             <ul className={this.state.isOpen ? 'mobile open' : ''} onClick={this.toggleHamburger}>
-                <li><Link to="/"><span></span>Home</Link></li>
-                <li><Link to="/projects"><span></span>Projects</Link></li>
-                <li><Link to="/achievements"><span></span>Achievements</Link></li>
-                <li><Link to="/about-me"><span></span>About Me</Link></li>
-                <li><Link to="/contact-me"><span></span>Contact Me</Link></li>
+                <li><NavLink to="/home" activeClassName="active-page"><span></span>Home</NavLink></li>
+                <li><NavLink to="/projects" activeClassName="active-page"><span></span>Projects</NavLink></li>
+                <li><NavLink to="/achievements" activeClassName="active-page"><span></span>Achievements</NavLink></li>
+                <li><NavLink to="/about-me" activeClassName="active-page"><span></span>About Me</NavLink></li>
+                <li><NavLink to="/contact-me" activeClassName="active-page"><span></span>Contact Me</NavLink></li>
+                <li><NavLink to="/resume" activeClassName="active-page"><span></span>Resume</NavLink></li>
             </ul>
         </nav>
         <div id="nav-icon1" className={this.state.isOpen ? 'open' : ''} onClick={this.toggleHamburger}>

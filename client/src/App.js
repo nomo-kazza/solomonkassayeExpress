@@ -9,6 +9,7 @@ import Projects from './Projects';
 import Achievements from './Achievements';
 import AboutMe from './AboutMe';
 import ContactMe from './ContactMe';
+import ResumeSlider from './ResumeSlider';
 import FourOFour from './404Example'
 import Home from './Home'
 import './App.css';
@@ -27,6 +28,7 @@ class App extends Component {
             <Route path="/achievements" component={Achievements} />
             <Route path="/about-me" component={AboutMe} />
             <Route path="/contact-me" component={ContactMe} />
+            <Route path="/resume" component={ResumeSlider} />
             <Route component={FourOFour}/>
           </Switch>
         </div>

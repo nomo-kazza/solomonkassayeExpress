@@ -27,6 +27,10 @@ nav ul {
   align-items: center;
   margin: 0;
 }
+.active-page {
+  color: rgba(20, 90, 250, 1);
+  background-color: #fff;
+}
 @media only screen and (max-width: 1023px) {
   .sk-header nav {
     width: 50%;
@@ -109,7 +113,10 @@ nav ul {
         transition: all 0.8s ease-in-out;
       }
       nav ul li:nth-child(5) {
-        transition: all 0.9s ease-in-out;
+        transition: all 1s ease-in-out;
+      }
+      nav ul li:nth-child(6) {
+        transition: all 1.2s ease-in-out;
       }
       nav ul.mobile.open li {
         right: 0;

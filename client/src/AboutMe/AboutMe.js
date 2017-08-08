@@ -49,7 +49,7 @@ class AboutMe extends Component {
               <li className="gmap">Google Map API</li>
               <li className="android">Android</li>
               <li className="sharepoint">Sharepoint</li>
-              <li className="sharepoint">Sublime Text</li>
+              <li className="sublime">Sublime Text</li>
               <li className="sharepoint">Visual Studio Code</li>
             </ul>
           </div>

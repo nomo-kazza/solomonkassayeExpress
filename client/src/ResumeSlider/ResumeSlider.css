@@ -1,0 +1,137 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+/*-->> resume Slider style <<--*/
+.sk-resume-slider {
+  position: relative;
+}
+
+/*-->> slick overide style <<--*/
+.slick-vertical .slick-slide {
+  height: calc(100vh - 155px);
+  padding: 100px 230px 80px 100px;
+  background: #03A9F4;
+  width: 100% !important;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5;
+  position: relative;
+}
+  .slick-vertical .slick-slide:after {
+    content: "";
+
+  }
+  .slick-vertical .slick-slide h6,
+  .slick-vertical .slick-slide h5 {
+    color: #95ffec;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    left: -60px;
+    border-bottom: 1px solid #1ca;
+    margin-bottom: 5px;
+  }
+  .slick-vertical .slick-slide h6 {
+    left: -20px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .slick-vertical .slick-slide li {
+    list-style: disc;
+  }
+.sk-resume-slider .slick-dots {
+  bottom: 0;
+  top: 40%;
+  right: 0;
+  left: auto;
+  width: 40px;
+}
+  .sk-resume-slider .slick-dots li {
+    display: block;
+  }
+    .sk-resume-slider .slick-dots li button:before {
+      font-size: 20px;
+      color: #1ca;
+      transition: all .4s ease-in-out;
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    .sk-resume-slider .slick-dots li button:after {
+      content: "Career Objective";
+      display: block;
+      font-size: 15px;
+      color: #1ca;
+      width: 200px;
+      position: absolute;
+      right: 35px;
+      top: 10px;
+      text-align: right;
+    }
+    .sk-resume-slider .slick-dots li:nth-child(2) button:after {
+      content: "Core Competencies";
+    }
+    .sk-resume-slider .slick-dots li:nth-child(3) button:after {
+      content: "Professional Experience";
+    }
+    .sk-resume-slider .slick-dots li:nth-child(4) button:after {
+      content: "Education";
+    }
+    .sk-resume-slider .slick-dots li:nth-child(5) button:after {
+      content: "Skills";
+    }
+    .sk-resume-slider .slick-dots li:nth-child(6) button:after {
+      content: "Accomplishments";
+    }
+    .sk-resume-slider .slick-prev:before, .slick-next:before {
+      font-size: 60px;
+    }
+    .sk-resume-slider .slick-prev, .slick-next {
+      width: 60px;
+      height: 60px;
+    }
+    .sk-resume-slider .slick-prev {
+      left: -35px;
+    }
+    .sk-resume-slider .slick-next {
+      right: -35px;
+    }
+    .sk-resume-slider .slick-dots li {
+      margin: 0;
+      width: 30px;
+      height: 30px;
+    }
+    .sk-resume-slider .slick-dots li button {
+      width: 30px;
+      height: 30px;
+    }
+    .sk-resume-slider .slick-dots li.slick-active button:before {
+      color: #95ffec;
+    }
+    .sk-resume-slider .slick-dots li.slick-active button:after {
+      color: #95ffec;
+    }
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .slick-vertical .slick-slide {
+    height: calc(100vh - 55px);
+    padding: 70px 30px 50px 30px;
+    background: #03A9F4;
+    font-size: 13px;
+    line-height: 1.5;
+    position: relative;
+    overflow: auto;
+  }
+  .sk-resume-slider .slick-dots li button:after {
+    display: none;
+  }
+  .slick-vertical .slick-slide h6,
+  .slick-vertical .slick-slide h5 {
+    left: -20px;
+  }
+  .slick-vertical .slick-slide h6 {
+    font-size: 13px;
+    font-weight: normal;
+  }
+  .sk-resume-slider .slick-dots {
+    width: 35px;
+  }
+}

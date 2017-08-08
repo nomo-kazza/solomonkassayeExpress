@@ -41,7 +41,7 @@ class Projects extends Component {
     return (
       <div className="sk-projects">
         <div className="sk-projects-video">
-          <div className="sk-h4"><h4>Projects I participated while I was working with Topcoder at <a href={this.tcDash}>www.topcoder.com</a></h4></div>
+          <div className="sk-h4"><h4>Projects I have been participated while I was working with Topcoder at <a href={this.tcDash}>www.topcoder.com</a></h4></div>
           <div className="bg-cover"></div>
           {/* <video autoPlay="true" preload="true" loop="true" muted>
             <source src={this.videoSrc} type="video/mp4"></source>

@@ -143,6 +143,9 @@
         .sk-skills ul li.android {
           background-color: #77c159;
         }
+        .sk-skills ul li.sublime {
+          background-color: gray;
+        }
         .sk-skills ul li.sharepoint {
           background-color: #1570A6;
         }
