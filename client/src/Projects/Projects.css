@@ -83,6 +83,7 @@
       }
 .sk-project-cards-container {
   padding: 15px 0 30px;
+  column-width: 20vw;
   column-width: calc(100vw / 4 - 40px);
   column-gap: 20px;
   width: 100%;
