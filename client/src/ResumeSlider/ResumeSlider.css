@@ -37,6 +37,10 @@
   }
   .slick-vertical .slick-slide li {
     list-style: disc;
+    max-width: 650px;
+  }
+  .slick-vertical .slick-slide p {
+    max-width: 650px;
   }
 .sk-resume-slider .slick-dots {
   bottom: 0;

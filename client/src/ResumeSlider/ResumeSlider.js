@@ -18,9 +18,6 @@ class ResumeSlider extends Component {
       verticalSwiping: true,
       draggable: true,
       cssEase: "ease-in-out",
-      // autoplaySpeed: 100,
-      // swipeToSlide: true,
-      // touchMove: true
     };
     return (
       <div className="sk-resume-slider">
