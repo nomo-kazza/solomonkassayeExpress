@@ -25,7 +25,7 @@ class ResumeSlider extends Component {
           <Slider {...settings}>
             <div className="resume-section">
               <h5>Career Objective</h5>
-              <p>Web Developer offering advanced knowledge of Javascript, HTML5, 
+              <p>Software Developer offering advanced knowledge of Javascript, HTML5, 
                 and CSS3, as well as extensive experience with Jquery, Angular 1, 
                 Angular 4, React, and Bootstrap Frameworks. Experienced Web Developer 
                 specializing in front-end development for dynamic web application projects.</p>

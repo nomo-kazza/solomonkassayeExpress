@@ -64,7 +64,7 @@ class ContactMe extends Component {
     return (
       <div className="sk-contact-me">
         <div className={"message-sent-status " + (this.state.formSent ? "show" : '')} >
-          Your message has been sent. Thank You, I will reply too soon.</div>
+          Your message has been sent. Thank You, I will reply to you as soon as possible.</div>
         <div className={"message-sent-status " + (this.state.isEmpty ? "show error" : '')} >
           Please enter your email and/or message</div>
         <div className="sk-contact-form">

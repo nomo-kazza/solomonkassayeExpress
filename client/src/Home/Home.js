@@ -17,7 +17,7 @@ class Home extends Component {
               a better understanding of my specialties, technique and professional experience.
               What you’ll find below is the projects I was working at <a href="https://www.topcoder.com/members/nomo_kazza/" className="link"> www.topcoder.com</a> and the certificate I got from online courses.</h5></div>
             <div className="sk-h5"><h5>Enjoy browsing, and get in touch with any questions.</h5></div>
-            <a href="mailto:solomonjobsearch@gmail.com?Subject=Hello%20Solomon" className="sk-btn contact-me-btn">Contact Me</a>
+            <a href="/contact-me" className="sk-btn contact-me-btn">Contact Me</a>
           </div>
           <div className="sk-section sk-carousel-container">
             <ProjectsSlider></ProjectsSlider>

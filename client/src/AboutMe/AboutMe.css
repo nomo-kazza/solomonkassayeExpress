@@ -46,9 +46,7 @@
       background: teal;
       display: inline;
     }
-    /*.sk-about-content .sk-h5 {
-      margin-bottom: 10px;
-    }*/
+
     .sk-about-content .sk-intro-container h5 {
       font-size: 20px;
       background: brown;
@@ -58,6 +56,7 @@
       flex: 1;
       padding: 40px 50px 10px 20px;
     }
+      
       .sk-skills .sk-h4 {
         text-align: center;
         padding-bottom: 10px;
@@ -66,6 +65,15 @@
         font-size: 20px;
         display: inline;
         background: teal;
+      }
+      .sub-title.sk-h4 {
+        margin-bottom: 0;
+        margin-top: 10px;
+      }
+      .sub-title h4 {
+        font-size: 15px;
+        display: inline;
+        background: brown;
       }
 
         .sk-skills ul li {

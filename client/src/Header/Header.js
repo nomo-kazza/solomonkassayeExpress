@@ -22,9 +22,9 @@ class Header extends Component {
               <li><NavLink exact to="/" activeClassName="active-page"><span></span>Home</NavLink></li>
               <li><NavLink to="/projects" activeClassName="active-page"><span></span>Projects</NavLink></li>
               <li><NavLink to="/achievements" activeClassName="active-page"><span></span>Achievements</NavLink></li>
-              <li><NavLink to="/about-me" activeClassName="active-page"><span></span>About Me</NavLink></li>
-              <li><NavLink to="/contact-me" activeClassName="active-page"><span></span>Contact Me</NavLink></li>
               <li><NavLink to="/resume" activeClassName="active-page"><span></span>Resume</NavLink></li>
+              <li><NavLink to="/contact-me" activeClassName="active-page"><span></span>Contact Me</NavLink></li>
+              <li><NavLink to="/about-me" activeClassName="active-page"><span></span>About Me</NavLink></li>
             </ul>
         </nav>
         <div id="nav-icon1" className={this.state.isOpen ? 'open' : ''} onClick={this.toggleHamburger}>
