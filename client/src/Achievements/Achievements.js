@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import './Achievements.css';
-
+/**
+ * Achievements component which display about the achievements.
+ */
 class Achievements extends Component {
 
   render() {

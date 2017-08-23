@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import './ResumeSlider.css';
-
+/**
+ * ResumeSlider component which display the resume slides.
+ */
 class ResumeSlider extends Component {
 
   render() {
@@ -47,7 +49,7 @@ class ResumeSlider extends Component {
             </div>
             <div className="resume-section">
               <h5>Professional Experience</h5>
-              <h6>Front End Developer, 09/2014 – present, Topcoder, San Francisco, CA</h6>
+              <h6>Front End Developer, 09/2014 – present, Topcoder, San Francisco, CA (Remote)</h6>
               <ul>
                 <li>Create the web application (website) using the provided wireframes, storyboards (Photoshop/Illustrator), and the specification document.</li>
                 <li>Develop fully functional and responsive front end web application within 5-7 days.</li>
@@ -56,7 +58,14 @@ class ResumeSlider extends Component {
                 <li>Make sure images should be properly compressed and look sharp for Retina and Standard devices.</li>
                 <li>Make sure the design, layout, and typography of the prototype (page) match the storyboard (Photoshop).</li>
               </ul>
-              <h6>Java Developer, 08/2009 – 01/2012, Topcoder, San Francisco, CA</h6>
+              <h6>Sharepoint Developer, 02/2012 – 08/2014, Yeka Sub City Administration Office, Addis Ababa, ET</h6>
+              <ul>
+                <li>Installed, configured, and Managed SharePoint 2013 Servers.</li>
+                <li>Responsible for maintaining a current list of all site collection administrators.</li>
+                <li>Responsible to create and assist users to create Sites, Document Libraries, and Lists.</li>
+                <li>Responsible for creating and managing user permissions for SharePoint sites.</li>
+              </ul>
+              <h6>Java Developer, 08/2009 – 01/2012, Topcoder, San Francisco, CA (Remote)</h6>
               <ul>
                 <li>Convert a component design (UML Class Diagram) into a functional component.</li>
                 <li>Implement each class using the given UML Diagram and the Component Specification.</li>
@@ -73,7 +82,7 @@ class ResumeSlider extends Component {
             <div className="resume-section">
               <h5>Skills</h5>
               <ol>
-                <li>HTML5 * CSS3 * Javascript (Expert)</li>
+                <li>HTML5 * CSS3 * Javascript</li>
                 <li>Bootstrap * Sass</li>
                 <li>Jquery * Angular 1 * Angular 4 * React</li>
                 <li>D3 Js * Require Js</li>

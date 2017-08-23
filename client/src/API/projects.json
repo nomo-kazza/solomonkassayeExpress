@@ -14,7 +14,7 @@
         "projectTags": ["Login", "Carousel", "Quiz", "Steps", "Editable", "List View", "Grid View",
           "Table Sort", "Pagination", "Display per page", "fluid layout", "Filtering", "Dropdowns", "Up/Down row",
           "Remove row", "Modal", "Export CSV"],
-        "videoSrc": "https://dl.dropboxusercontent.com/s/p07me8u4co8qv95/IBM_CASTEL_-_DESKTOPTablet_Project_1080p.mp4",
+        "videoSrc": "https://dl.dropboxusercontent.com/s/wwf46w3mu6fvx23/DINNACO_COUNSELING.mp4",
         "thumbSrc": "https://res.cloudinary.com/nomo-kazza/image/upload/v1499123074/dinnaco1.png" },
 
       { "projectName": "IBM CASTLE - MOBILE/TABLET/DESKTOP RESPONSIVE UI PROTOTYPE",
@@ -48,7 +48,7 @@
         "projectTechs": ["Html5", "Javascript", "Css3", "Bootstrap"],
         "projectTags": ["Login", "Validation Error", "List View", "Add Item", "Mark a list", "Notification",
           "Select emoticon", "Input Error", "Timer", "fluid layout", "Remove User", "Edit Item", "Delete List"],
-        "videoSrc": "https://dl.dropboxusercontent.com/s/pqjtze1xoiu6ua4/SunShot-Building-DataCloud_project_1080p.mp4",
+        "videoSrc": "https://dl.dropboxusercontent.com/s/pqjtze1xoiu6ua4/IBM_SIBM_AGILE_STANDUP.mp4",
         "thumbSrc": "https://res.cloudinary.com/nomo-kazza/image/upload/v1498922511/web-assets/agile-standup-win1_hi0s29.jpg" },
 
       { "projectName": "Bermuda - Automotive Manufacturing Responsive UI Prototype",
@@ -66,7 +66,7 @@
         "projectTags": ["Google Map", "Login", "Card View", "Tabs", "List View", "Slider input", "Dropdown",
           "pagination", "Responsive", "Fluid Layout", "Overlay", "Modal", "Toggle", "Fixed Header",
           "Info Window", "Custom Map Marker", "Slide Show", "Font-Face", "Sort", "Popup"],
-        "videoSrc": "https://dl.dropboxusercontent.com/s/0r7dx1uismecnwt/Drone_Series_-_Implement_DSP_720p.mp4",
+        "videoSrc": "https://dl.dropboxusercontent.com/s/wwf46w3mu6fvx23/Drone_Series_-_Implement_DSP_720p.mp4",
         "thumbSrc": "https://res.cloudinary.com/nomo-kazza/image/upload/v1498922514/web-assets/drone-win1_ldb1gn.jpg" },
 
       { "projectName": "Cardinal Health - NPWT Rentals - HTML UI Prototype",
@@ -75,7 +75,7 @@
         "projectTags": ["Side Nav", "Collapse", "Tabs", "vertical ellipsis", "Font-face",
           "Filtering", "Searching", "Responsive", "Fluid Layout", "Overlay", "Modal", "Toggle", "Fixed Header", "Notification",
           "column options", "page size", "Expandable Row", "collapsible Row", "Pagination"],
-        "videoSrc": "https://dl.dropboxusercontent.com/s/p07me8u4co8qv95/IBM_CASTEL_-_DESKTOPTablet_Project_1080p.mp4",
+        "videoSrc": "https://dl.dropboxusercontent.com/s/vj4x63bleeyldl1/Cardinal_Health.mp4",
         "thumbSrc": "https://res.cloudinary.com/nomo-kazza/image/upload/v1499645530/web-assets/Warehouse_Dashboard.jpg" },
 
       { "projectName": "AppXpress - Appointment Booking Responsive UI Prototype",

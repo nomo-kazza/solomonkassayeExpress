@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import ProjectsSlider from '../ProjectsSlider';
 import Achievements from '../Achievements';
 import './Home.css';
-
+/**
+ * Home component which display home page content.
+ */
 class Home extends Component {
   render() {
     return (

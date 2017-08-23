@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import './ProjectsSlider.css';
-
+/**
+ * ProjectsSlider component which display the Projects slide.
+ */
 class ProjectsSlider extends Component {
 
   render() {

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Project.css';
-
+/**
+ * Project component which display the project.
+ */
 class Project extends Component {
   constructor() {
     super();

@@ -9,7 +9,9 @@ import LinkedinIcon from '../icons/LinkedinIcon';
 import FacebookIcon from '../icons/FacebookIcon';
 
 import './Footer.css';
-
+/**
+ * Footer component which display contact and social media links.
+ */
 class Footer extends Component {
 
   render() {

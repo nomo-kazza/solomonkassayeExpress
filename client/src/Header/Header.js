@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
 import './Header.css';
-
+/**
+ * Header component which display navigation and the logo.
+ */
 class Header extends Component {
   constructor(props) {
     super(props);

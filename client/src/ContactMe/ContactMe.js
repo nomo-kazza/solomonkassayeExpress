@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './ContactMe.css';
-
+/**
+ * ContactMe component which display contact me form.
+ */
 class ContactMe extends Component {
   constructor() {
     super();
